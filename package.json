@@ -11,6 +11,7 @@
   "bin": {
     "wa-automate": "bin/server.js"
   },
+  
   "scripts":  {
     "start": "node dist/server.js",
     "build": "rm -rf dist/ && tsc && npm run build:lib && npm run build:config-for-bin",
