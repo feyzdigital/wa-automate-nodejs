@@ -5,13 +5,14 @@
   "brokenMethodReportUrl": "https://funcs.openwa.dev/report-bm",
   "patches": "https://cdn.openwa.dev/patches.json",
   "stickerUrl": "https://sticker-api.openwa.dev",
-  "description": " 💬 🤖 The most reliable NodeJS whatsapp library for chatbots with advanced features.",
+  "description": " \ud83d\udcac \ud83e\udd16 The most reliable NodeJS whatsapp library for chatbots with advanced features.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
     "wa-automate": "bin/server.js"
   },
   "scripts": {
+    "start": "node dist/index.js",
     "build": "rm -rf dist/ && tsc && npm run build:lib && npm run build:config-for-bin",
     "build:skipmid": "tsc && npm run build:lib",
     "build:lib": "ts-node prebuild.ts",
