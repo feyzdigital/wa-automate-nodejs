@@ -8,9 +8,8 @@ app.get('/', (req, res) => {
   res.send('✅ WhatsApp bot is up and running!');
 });
 
-// initialize WhatsApp session (bu fonksiyon zaten projede mevcut)
-create();
+create(); // WhatsApp oturumunu başlatır
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server is running on http://localhost:${PORT}`);
+  console.log(`🚀 Server is running on port ${PORT}`);
 });
