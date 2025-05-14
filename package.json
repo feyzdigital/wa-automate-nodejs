@@ -25,7 +25,8 @@
     "release": "release-it",
     "release-ci": "release-it --ci",
     "release-image": "node release-image.js",
-    "docwatch": "onchange 'src/**/*.ts'  'docs-source/**/*.md' -- typedoc",
+    "docwatch": "onchange 'src/**/*.ts'  'docs-source/**/*.md' -- typedoc", "start": "node dist/index.js"
+,
     "build:config-for-bin": "cd build && ts-node build-config-json-for-bin.ts && ts-node generate-oas-types.ts && cd ..",
     "postinstall": "patch-package",
     "install": "cross-env npm_config_yes=true npx ignore-check@latest -p '**.data.json' -p '**.node-persist**' -p '**_IGNORE_**' --comment 'managed by open-wa'"
